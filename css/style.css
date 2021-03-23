@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    height: 200vh;
+    overflow: hidden;
+}
+
+section .container-1{
+    width: 100%;
+    height: 100vh;
+    background-color: #20506b;
+    position: relative;
+    overflow: hidden;
+}
+
+
+section .container-1:nth-child(1){
+    height: 100vh;
+    width: 100%;
+    background-image: url(/img.jpg);
+    background-size: cover;
+}
+section .container-1:nth-child(1) h2{
+    color: #000;
+    font-size: 8em;
+    transform: translateY(0);
+    z-index: 100;
+    bottom: 0;
+}
+section .container-1:nth-child(2) h2{
+    bottom: 100%;
+    transform: translateY(0);
+}
+section .container-1 h2{
+    position: absolute;
+    white-space: nowrap;
+    font-size: 8em;
+    text-align: center;
+    width: 100%;
+    color: #FFF;
+    line-height: 1.5;
+    transition: all .1s ease;
+    transition-delay: .001s;
+}
+
+.header{
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+.header h1{
+    margin: 100px 0;
+    width: 100%;
+    font-size: 32px;
+    color: #FFF;
+}
+section .header:not(.header-2){
+    display: flex;
+    align-items: center;
+}
+section .header:not(.header-2) h1{
+    transition: all .1s ease-in;
+}
+section .header-2{
+    display: flex;
+    align-items: flex-end;
+}
+/* 
+section div:last-child h2{
+    animation: animate2 1s cubic-bezier(.91,.01,.02,1.01) infinite alternate-reverse;
+    animation-delay: 0.5s;
+
+}
+section div:first-child h2{
+    animation: animate 1s cubic-bezier(.91,.01,.02,1.01) infinite alternate-reverse;
+    animation-delay: 0.5s;
+} */
+
+@keyframes animate{
+    0%{
+        transform: translateY(100%);
+        font-size: 12em;
+    }
+    100%{
+        transform: translateY(0);
+        font-size: 8em;
+    }
+}
+@keyframes animate2{
+    0%{
+        transform: translateY(0%);
+        font-size: 12em;
+    }
+    100%{
+        transform: translateY(-100%);
+        font-size: 8em;
+    }
+}
