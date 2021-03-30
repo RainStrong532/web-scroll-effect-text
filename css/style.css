@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* scroll-behavior: smooth; */
 }
 
 section{
@@ -44,8 +45,8 @@ section .container-1 h2{
     width: 100%;
     color: #FFF;
     line-height: 1.5;
-    transition: all .1s ease;
-    transition-delay: .001s;
+    transition: all 1s ease-in;
+    transition-delay: .1s;
 }
 
 .header{
@@ -64,7 +65,8 @@ section .header:not(.header-2){
     align-items: center;
 }
 section .header:not(.header-2) h1{
-    transition: all .1s ease-in;
+    transition: all 1s ease-in;
+    transition-delay: .1s;
 }
 section .header-2{
     display: flex;
